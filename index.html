@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css/">
+    <title>javascrip-prac</title>
+</head>
+<body>
+    <h2>javascript</h2>
+    <p>Even numbers bold <br> odd numbers italic<br>prime numers bold and italic</p>
+    <p id="Checker"></p>
+    <script>
+        
+            let text = "";
+            for (let i = 1; i <= 20; i++) {
+            if (i%2 < 1) {
+            text += "<p style='font-weight:bold'>The number is " + i + "</p><br>";
+        }
+        else {
+            text += "<p style='font-style:italic'>The number is " + i + "<br>";
+        }
+        
+    }
+
+        document.getElementById("Checker").innerHTML = text;
+    </script>
+    
+</body>
+</html>
